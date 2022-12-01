@@ -1,13 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 
-html {
-  min-width: 100vw;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--font: "Be Vietnam Pro", sans-serif;
+/* Primary Colors  */
+--gray:#fff;
+--violet:#8B48BF;
+--cyan:#3CDDF3;
+--dark-gray:#1E1E26;
+--dark-blue:#232851;
+--light-gray:rgb(249, 249, 249); 
+/* Font size  */
+--font-size:16px;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Be Vietnam Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray);
+  font-family: var(--font);
+  font-size: var(--font-size);
 }
 
 .nav {
@@ -32,7 +49,7 @@ body {
   margin-right: 2rem;
 }
 .main-menu li a {
-  color: #242e52;
+  color: var(--dark-blue);
   text-decoration: none;
 }
 .main-menu li a:hover {
@@ -42,11 +59,11 @@ body {
 .btn-main {
   padding: 0.75rem 2rem;
   border-radius: 1rem;
-  background-color: #8b48bf;
-  color: #ffffff;
-  border: solid 1px #8b48bf;
+  background-color: var(--violet);
+  color: var(--light-gray);
+  border: solid 1px var(--violet);
 }
 .btn-main:hover {
-  background-color: #ffffff;
+  background-color: var(--light-gray);
   color: #8b48bf;
 }
