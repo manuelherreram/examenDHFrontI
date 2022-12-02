@@ -8,8 +8,8 @@
     <!-- FontAwesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
-      integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -17,28 +17,36 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Navbar start -->
-    <nav class="nav">
-      <a href="#">
-        <div class="logo">
-          <img src="./img/logo.svg" alt="logo" />
-        </div>
-      </a>
-    
-
-      <div class="menu d-none d-md-block">
-        <ul class="main-menu">
+    <!-- Header Section-->
+    <header class="container header-home">
+      <img class="logo" src="./img/logo.svg" alt="logo-sportit" />
+      <nav class="header-nav">
+        <ul class="container nav-ul">
           <li><a href="#">Sport</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">About us</a></li>
           <li><a href="#">Training</a></li>
           <li><a href="#">Community</a></li>
         </ul>
+      </nav>
+
+      <button class="btn-cta">Contact</button>
+
+      <div class="burger fa-solid fa-bars"></div>
+    </header>
+
+    <!-- Hero section -->
+
+    <section class="container container-hero">
+      <img class="hero-img" src="./img/padel-intro.png" alt="" />
+      <div class="container hero-text">
+        <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
+        <p>
+          The final Open of the 2022 World Padel Tour season is underway, don't
+          miss out on any of the action!
+        </p>
+        <button class="btn-cta">Contact</button>
       </div>
-      <div class="get-started">
-        <button class="btn-main">Contact</button>
-      </div>
-    </nav>
-    <!-- Navbar end -->
+    </section>
   </body>
 </html>
