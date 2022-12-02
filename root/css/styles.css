@@ -115,6 +115,27 @@ body {
   margin-top: 40px;
 }
 
+/* Estilos del banner */
+.banner {
+  display: flex;
+  background-color: var(--violet);
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 40px 14%;
+  justify-content: space-between;
+  align-items: center;
+}
+.h-banner {
+  font-size: 2.25rem;
+  color: var(--gray);
+  padding-right: 50px;
+  width: 100%;
+}
+.p-banner {
+  color: #fff;
+  padding-left: 50px;
+  width: 100%;
+}
 /* Media queries */
 
 @media screen and (max-width: 480px) {
@@ -136,5 +157,18 @@ body {
   .hero-text {
     width: 100%;
     gap: 25px;
+  }
+  .banner {
+    display: block;
+    background-color: #3cddf3;
+    padding: 40px 20px;
+    margin-top: 20px;
+  }
+  .h-banner,
+  .p-banner {
+    padding: 0;
+  }
+  .h-banner {
+    margin-bottom: 50px;
   }
 }
